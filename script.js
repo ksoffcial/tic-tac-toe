@@ -11,6 +11,7 @@ let winNmbr = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8],
 
 
 let palyCount = 0;
+// To acess all indivisual box and display the text in the box 
 boxes.forEach((box, idx) => {
     box.addEventListener('click', () => {
         if (paler_x) {
@@ -26,6 +27,7 @@ boxes.forEach((box, idx) => {
         console.log(palyCount)
         let getwinner = getWinner();
 
+        // to check the draw condition 
         if (palyCount === 9 && !getwinner) {
             drawGame();
         }
@@ -33,6 +35,7 @@ boxes.forEach((box, idx) => {
 
 })
 
+// to start the new game
 newGame.addEventListener("click", () => {
     mainCont.style.display = "flex"
     winCont.style.display = "none"
@@ -41,6 +44,8 @@ newGame.addEventListener("click", () => {
     }
 })
 
+
+// to display the draw condition 
 const drawGame = () => {
     winText.innerText = `Game has draw 😷`;
     mainCont.style.display = "none"
@@ -48,7 +53,7 @@ const drawGame = () => {
     palyCount = 0;
 }
 
-
+// To display the winner 
 const showWinnner = (winner) => {
     winText.innerText = `congratulations ${winner} is a winner!🎉`;
     mainCont.style.display = "none"
@@ -56,6 +61,8 @@ const showWinnner = (winner) => {
     palyCount = 0;
 }
 
+
+// checking the condition of the winner 
 const getWinner = () => {
     for (let nmbr of winNmbr) {
         let play1 = boxes[nmbr[0]].innerText;
