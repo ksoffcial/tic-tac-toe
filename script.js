@@ -50,7 +50,7 @@ const drawGame = () => {
 
 
 const showWinnner = (winner) => {
-    winText.innerText = `Congutalation ${winner} is a winner!🎉`;
+    winText.innerText = `congratulations ${winner} is a winner!🎉`;
     mainCont.style.display = "none"
     winCont.style.display = "flex"
     palyCount = 0;
