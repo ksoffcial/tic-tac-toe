@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#011627] h-full w-full">
+    <h1 class=" text-center font-bold text-4xl my-6 text-[#fdfffc]">Tic-Tac-Toe</h1>
+
+    <div class="  justify-center flex-col items-center h-[80vh]  gap-y-6 hidden" id="winCont">
+        <h1 id="winner" class="text-3xl font-bold text-white">
+            Congutalation you are winner!🎉
+        </h1>
+        <button id="newGame" class="px-10 py-2 rounded-lg bg-[#41ead4] text-black text-xl cursor-pointer font-semibold">New Game</button>
+    </div>
+
+    <div class=" justify-center flex-col items-center flex" id="main">
+        <div class="flex flex-wrap w-80 gap-4">
+            <button class="box size-24 bg-[#41ead4] rounded-lg text-7xl  flex justify-center items-center"></button>
+            <div class="box size-24 bg-[#41ead4] rounded-lg text-7xl  flex justify-center items-center"></div>
+            <div class="box size-24 bg-[#41ead4] rounded-lg text-7xl  flex justify-center items-center"></div>
+            <div class="box size-24 bg-[#41ead4] rounded-lg text-7xl  flex justify-center items-center"></div>
+            <div class="box size-24 bg-[#41ead4] rounded-lg text-7xl  flex justify-center items-center"></div>
+            <div class="box size-24 bg-[#41ead4] rounded-lg text-7xl  flex justify-center items-center"></div>
+            <div class="box size-24 bg-[#41ead4] rounded-lg text-7xl  flex justify-center items-center"></div>
+            <div class="box size-24 bg-[#41ead4] rounded-lg text-7xl  flex justify-center items-center"></div>
+            <div class="box size-24 bg-[#41ead4] rounded-lg text-7xl  flex justify-center items-center"></div>
+        </div>
+        <button id="resetBtn" class="bg-[#b91372] rounded-lg px-10 py-2 mt-8 text-xl font-bold text-white cursor-pointer">Reset Game</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
